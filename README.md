@@ -1,5 +1,22 @@
 # **rosbag2video**
 
+## usage
+
+1. 安装pip包
+
+```shell
+pip3 install rospkg
+pip3 install pycryptodomex
+pip3 install gnupg
+pip3 install opencv-python
+```
+
+
+
+
+
+# before
+
     rosbag2video.py
     rosbag to video file conversion tool
     by Maximilian Laiacker 2020
@@ -22,8 +39,6 @@ For use with **ROS1** bags, please proceed with the instructions below.
 
     sudo apt install python3-roslib python3-sensor-msgs python3-opencv
 
-
-
 ## **Usage**:
 
     rosbag2video.py [--fps 25] [--rate 1] [-o outputfile] [-v] [-s] [-t topic] bagfile1 [bagfile2] ...
@@ -35,7 +50,7 @@ For use with **ROS1** bags, please proceed with the instructions below.
             Default is 25.
     -h      Displays this help.
     --ofile (-o) sets output file name.
-            If no output file name (-o) is given the filename '<prefix><topic>.mp4' is used and default output codec is h264.
+            If no output file name (-o) is given the filename '`<prefix><topic>`.mp4' is used and default output codec is h264.
             Multiple image topics are supported only when -o option is _not_ used.
             ffmpeg  will guess the format according to given extension.
             Compressed and raw image messages are supported with mono8 and bgr8/rgb8/bggr8/rggb8 formats.
